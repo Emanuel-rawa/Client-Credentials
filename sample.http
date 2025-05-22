@@ -1,0 +1,5 @@
+### GET Hello ###
+GET http://localhost:8000/hello
+
+### GET Hello Client ###
+GET http://localhost:9000/client/hello

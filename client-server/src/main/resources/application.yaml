@@ -1,0 +1,18 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: client-server
+
+  security:
+    oauth2:
+      client:
+        registration:
+          client-service:
+            provider: keycloak
+            client-id: client-service
+            client-secret: hajwMmYjHBo3Q2tcO8O0yk9R9dSjtCFu
+            authorization-grant-type: client_credentials
+        provider:
+          keycloak:
+            token-uri: http://localhost:8080/realms/master/protocol/openid-connect/token
